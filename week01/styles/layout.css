@@ -24,12 +24,12 @@ nav {
     padding: 1rem;
 }
 
-.content {
+main {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
-.main {
+.main_content {
     background-color: antiquewhite;
     padding-top: 1rem;
     padding-left: 1rem;
