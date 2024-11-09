@@ -1,0 +1,107 @@
+* {
+    text-decoration: none;
+    margin: 0;
+
+}
+
+body {
+    display: grid;
+}
+
+header>h1 {
+    font-family: "Delius Swash Caps", "Delius";
+    background-color: darkgreen;
+    padding: 1rem;
+    text-align: center;
+    color: antiquewhite;
+}
+
+nav {
+    display: flex;
+    font-family: "Montserrat Alternates";
+    background-color: antiquewhite;
+    justify-content: space-around;
+    padding: 1.5rem;
+}
+
+nav a {
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: dotted overline;
+    color: deeppink;
+}
+
+main {
+    font-family: "Montserrat Alternates";
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 1rem;
+    width: 80%;
+    margin: auto;
+}
+
+h2 {
+    font-family: "Delius Swash Caps", "Delius";
+    background-color: pink;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+h3 {
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+    clear: both;
+}
+
+.card {
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
+    margin: 1rem;
+    padding: 0;
+}
+
+img {
+    width: 220px;
+    float: right;
+}
+
+.intro {
+    padding: 2rem;
+    line-height: 2rem;
+}
+
+.state {
+    padding: 2rem;
+    line-height: 2rem;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+li a {
+    color: black;
+}
+
+li a:hover {
+    text-decoration: dotted underline;
+    color: deeppink;
+}
+
+footer {
+    font-family: "Delius Swash Caps", "Delius";
+    background-color: darkgreen;
+    color: antiquewhite;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}

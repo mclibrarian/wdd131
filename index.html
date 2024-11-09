@@ -4,11 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131 | Brita McNabb</title>
+    <title>WDD131 - Dynamic Web Fundamentals - Brita McNabb</title>
+    <meta name="description"
+        content="A webpage containing useful and interesting information, facts, and links related to Brita McNabb, a student who is taking WDD131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Brita McNabb">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Delius&family=Delius+Swash+Caps&family=Montserrat+Alternates:ital@0;1&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-
+    <header>
+        <h1>WDD131: Dynamic Web Fundamentals - Brita McNabb</h1>
+        <nav>
+            <a href="https://www.linkedin.com">LinkedIn</a>
+            <a href="https://www.byui.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/2-thes/2?lang=eng&id=p15#p15">Scripture</a>
+            <a href="">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About me!</h2>
+            <img class="intro" src="images/profile_picture.jpg" alt="Picture of Brita McNabb">
+            <p class="intro">Hi! My name is Brita and I'm from Virginia. I'm doing concurrent enrollment
+                right now and I'm a senior in high school. I love learning and history. I also love historical
+                fashion, musical theater (I'm currently playing the evil stepmother in a production of
+                <i>Cinderella</i>, but I'm really very nice), knitting and crochet, playing piano and organ,
+                and reading. My favorite book is <i>Pride and Prejudice</i>, and I think 1910s fashion is
+                fabulous.
+            </p>
+            <h3>Virginia</h3>
+            <img class="state" src="images/colonial_williamsburg.jpg"
+                alt="Picture of a tree with orange leaves in Colonial Williamsburg">
+            <p class="state">Virginia is a state in the eastern United States. It was the 10th state to ratify the
+                Constitution and has the oldest permanent English settlement in North America. Its capital
+                is Richmond and its geography includes mountains, forests, beaches, rivers, waterfalls,
+                and caves. Virginia is known for its rich history starting in the 1600s and continuing to
+                today. One of its most famous cities is Williamsburg, the original capital city and
+                currently home to Colonial Williamsburg (the largest living history museum in the world),
+                Busch Gardens, and the College of William and Mary.</p>
+        </section>
+        <section class="card">
+            <h2>Some useful links:</h2>
+            <li><a href="https://www.librarything.com/mds">Learn the Dewey Decimal System</a></li>
+            <li><a href="https://hamstudy.org/">Study for a Ham Radio exam</a></li>
+            <li><a href="https://lcwo.net/">Learn Morse Code</a></li>
+            <li><a href="https://www.antiquepatternlibrary.org/">Antique Pattern Library</a></li>
+            <li><a href="https://looseends.org/">The Loose Ends Project</a></li>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 💕 Brita McNabb 💕 Virginia</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
