@@ -1,0 +1,94 @@
+* {
+    text-decoration: none;
+    margin: 0;
+}
+
+body {
+    display: grid;
+}
+
+header {
+    font-family: "Delius Swash Caps", "Delius";
+    background-color: darkgreen;
+    padding: 1rem;
+    color: antiquewhite;
+}
+
+nav {
+    display: flex;
+    font-family: "Montserrat Alternates", serif;
+    position: relative;
+}
+
+nav a {
+    color: antiquewhite;
+    display: none;
+}
+
+nav a:hover {
+    color: lightpink;
+    text-decoration: dotted underline;
+}
+
+#menu {
+    display: block;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖️";
+}
+
+nav.open {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
+.open a {
+    display: block;
+}
+
+h1 {
+    text-align: left;
+}
+
+h2 {
+    font-family: "Delius Swash Caps", "Delius";
+    padding: 1rem;
+    color: darkgreen;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    max-width: 80%;
+    margin: auto;
+}
+
+figure>img {
+    width: 100%;
+}
+
+figcaption {
+    font-family: "Montserrat Alternates", serif;
+    text-align: center;
+    padding: 1em;
+}
+
+footer {
+    font-family: "Delius Swash Caps", "Delius";
+    background-color: darkgreen;
+    color: antiquewhite;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}

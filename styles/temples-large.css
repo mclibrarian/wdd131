@@ -1,0 +1,35 @@
+@media only screen and (min-width: 45em) {
+    .navigation {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .navigation a {
+        display: flex;
+        align-items: center;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    main :first-child {
+        grid-column: 1/-1;
+    }
+
+}
