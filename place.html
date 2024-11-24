@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virginia</title>
+    <meta name="description"
+        content="A webpage containing useful and interesting information, facts, and links about Virginia">
+    <meta name="author" content="Brita McNabb">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Delius&family=Delius+Swash+Caps&family=Montserrat+Alternates:ital@0;1&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Virginia</h1>
+    </header>
+    <main>
+        <picture>
+            <source media="(min-width: 750px)" srcset="images/virginia-fall-large.jpg">
+            <img src="images/virginia-fall-small.jpg" alt="Fall leaves in Virginia">
+        </picture>
+        <section class="data">
+            <h2>Data</h2>
+            <div class="datacontent">
+                <p>Area: 42,774.2 sq mi</p>
+                <p>Population: 8,715,698</p>
+                <p>Capital: Richmond</p>
+                <p>Languages: English</p>
+                <p>Currency: US Dollar</p>
+                <p>Time Zone: UTC-5</p>
+                <p>Calling Code: n/a</p>
+                <p>Internet TLD: n/a</p>
+            </div>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weathercontent">
+                <img src="images/weather_icon.svg" alt="picture of a sun partly covered with a cloud" id="icon">
+                <div>
+                    <span>Temperature: </span>
+                    <span id="temp"></span>
+                    <span>° F</span>
+                </div>
+                <div>
+                    <span>Conditions:</span>
+                    <span id="conditions"></span>
+                </div>
+                <div>
+                    <span>Wind:</span>
+                    <span id="wind"></span>
+                    <span>mph</span>
+                </div>
+                <div>
+                    <span>Wind Chill:</span>
+                    <span id="chill">--</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🍁 Brita McNabb 🍁 Virginia</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
