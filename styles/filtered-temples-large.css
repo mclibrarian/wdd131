@@ -1,0 +1,35 @@
+@media only screen and (min-width: 45em) {
+    .navigation {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .navigation a {
+        display: flex;
+        align-items: center;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main {
+        max-width: 100%;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .templesgallery {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 25%));
+        justify-content: center;
+    }
+}

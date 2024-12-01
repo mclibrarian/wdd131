@@ -1,0 +1,123 @@
+* {
+    text-decoration: none;
+    margin: 0;
+}
+
+body {
+    display: grid;
+}
+
+header {
+    font-family: "Delius Swash Caps", sans-serif;
+    background-color: darkgreen;
+    padding: 1rem;
+    color: antiquewhite;
+}
+
+nav {
+    display: flex;
+    font-family: "Montserrat Alternates", serif;
+    position: relative;
+}
+
+nav a {
+    color: antiquewhite;
+    display: none;
+}
+
+nav a:hover {
+    color: lightpink;
+    text-decoration: dotted underline;
+}
+
+#menu {
+    display: block;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+nav.open {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
+.open a {
+    display: block;
+}
+
+h1 {
+    text-align: left;
+}
+
+h2 {
+    font-family: "Delius Swash Caps", sans-serif;
+    font-size: 2rem;
+    padding: 1rem;
+    color: darkgreen;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Delius Swash Caps", sans-serif;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    color: darkgreen;
+    text-align: center;
+}
+
+main {
+    max-width: 80%;
+    margin: auto;
+}
+
+section {
+    border: 1px solid black;
+    padding: 2rem;
+    background-color: antiquewhite;
+}
+
+p {
+    font-family: "Montserrat Alternates", serif;
+    text-align: center;
+    padding: 0.2em;
+}
+
+.templesgallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+}
+
+img {
+    border-radius: 15px;
+    border: 2px solid lightpink;
+    margin-top: 1.5rem;
+    width: 17em;
+}
+
+section:hover img {
+    border: 2px solid deeppink;
+}
+
+footer {
+    font-family: "Delius Swash Caps", sans-serif;
+    background-color: darkgreen;
+    color: antiquewhite;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+}

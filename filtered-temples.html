@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Photo Album</title>
+    <meta name="description" content="A webpage containing an album of temple photographs.">
+    <meta name="author" content="Brita McNabb">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Montserrat+Alternates&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Temple Photo Album</h1>
+        <button id="menu" aria-label="menu"></button>
+        <nav class="navigation">
+            <a href="#" id="home">Home</a>
+            <a href="#" id="old">Old</a>
+            <a href="#" id="new">New</a>
+            <a href="#" id="large">Large</a>
+            <a href="#" id="small">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h2 id="title">Home</h2>
+        <div class="templesgallery">
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 💕 Brita McNabb 💕 Virginia</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
