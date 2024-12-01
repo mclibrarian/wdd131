@@ -3,10 +3,6 @@
     margin: 0;
 }
 
-body {
-    display: grid;
-}
-
 header {
     font-family: "Delius Swash Caps", sans-serif;
     background-color: darkgreen;
@@ -78,8 +74,10 @@ h3 {
 }
 
 main {
-    max-width: 80%;
+    max-width: 1200px;
     margin: auto;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 section {
@@ -106,6 +104,7 @@ img {
     border: 2px solid lightpink;
     margin-top: 1.5rem;
     width: 17em;
+    aspect-ratio: auto 400/250;
 }
 
 section:hover img {
