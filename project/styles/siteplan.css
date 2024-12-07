@@ -1,0 +1,58 @@
+:root {
+    --main-color: rgb(173, 21, 67);
+    --accent-color: antiquewhite;
+    --main-font: "Quicksand", sans-serif;
+    --display-font: "Noto Serif Display", serif;
+}
+
+h2,
+h3 {
+    font-family: "Noto Serif Display";
+}
+
+header>h1 {
+    font-family: var(--display-font);
+    background-color: var(--main-color);
+    padding: 2rem;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 2rem;
+}
+
+div>h3 {
+    background-color: var(--accent-color);
+    color: var(--main-color);
+    padding: 1rem;
+}
+
+div>p {
+    font-family: "Quicksand";
+}
+
+a {
+    font-family: "Quicksand";
+    text-decoration: underline;
+    color: black;
+}
+
+a:hover {
+    color: var(--main-color);
+}
+
+img {
+    height: 400px;
+}
+
+footer {
+    font-family: "Noto Serif Display";
+    background-color: var(--main-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
