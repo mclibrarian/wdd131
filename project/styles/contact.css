@@ -1,0 +1,132 @@
+* {
+    text-decoration: none;
+    margin: 0;
+
+}
+
+:root {
+    --main-color: rgb(173, 21, 67);
+    --accent-color: antiquewhite;
+    --main-font: "Quicksand", sans-serif;
+    --display-font: "Noto Serif Display", serif;
+}
+
+header {
+    font-family: var(--display-font);
+    background-color: var(--main-color);
+    padding: 1rem;
+    color: var(--accent-color);
+}
+
+nav {
+    display: flex;
+    font-family: var(--main-font);
+    position: relative;
+}
+
+nav a {
+    color: var(--accent-color);
+    display: none;
+}
+
+nav a:hover {
+    color: lightpink;
+    text-decoration: dotted underline;
+}
+
+#menu {
+    display: block;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+nav.open {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
+.open a {
+    display: block;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+}
+
+h2 {
+    background-color: var(--accent-color);
+    color: var(--main-color);
+    padding: 1rem;
+    font-family: var(--display-font);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+p {
+    font-family: var(--main-font);
+}
+
+form {
+    background-color: lightpink;
+    padding: 1rem;
+    border: 1px solid var(--main-color);
+    border-radius: 3%;
+}
+
+.wf1 label {
+    display: block;
+    padding: 0.5rem;
+    padding-left: 2rem;
+    padding-bottom: 0.5rem;
+    font-family: var(--main-font);
+}
+
+.wf1 input[type="text"],
+.wf1 select,
+.wf1 textarea {
+    display: block;
+    background-color: var(--accent-color);
+    border: solid 1px var(--main-color);
+    border-radius: 0.4rem;
+    padding: 0.75rem;
+    width: 90%;
+    max-width: 400px;
+    margin-top: 0.5rem;
+}
+
+.wf1 input[type="submit"] {
+    border: 0.5px solid var(--accent-color);
+    background-color: var(--main-color);
+    color: var(--accent-color);
+    border-radius: 0.4rem;
+    padding: 1rem;
+    width: 90%;
+    max-width: 400px;
+    margin: 2rem 5% 2rem 5%;
+    font-family: var(--main-font);
+    font-size: 1.25rem;
+}
+
+footer {
+    font-family: var var(--display-font);
+    background-color: var(--main-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}

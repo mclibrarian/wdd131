@@ -1,0 +1,120 @@
+* {
+    text-decoration: none;
+    margin: 0;
+
+}
+
+:root {
+    --main-color: rgb(173, 21, 67);
+    --accent-color: antiquewhite;
+    --main-font: "Quicksand", sans-serif;
+    --display-font: "Noto Serif Display", serif;
+}
+
+header {
+    font-family: var(--display-font);
+    background-color: var(--main-color);
+    padding: 1rem;
+    color: var(--accent-color);
+}
+
+nav {
+    display: flex;
+    font-family: var(--main-font);
+    position: relative;
+}
+
+nav a {
+    color: var(--accent-color);
+    display: none;
+}
+
+nav a:hover {
+    color: lightpink;
+    text-decoration: dotted underline;
+}
+
+#menu {
+    display: block;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+nav.open {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
+.open a {
+    display: block;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+}
+
+h2 {
+    background-color: var(--accent-color);
+    color: var(--main-color);
+    font-family: var(--display-font);
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+h3 {
+    background-color: var(--accent-color);
+    color: var(--main-color);
+    margin: 2rem 0 1rem 0;
+    font-family: var(--display-font);
+}
+
+div>p,
+li {
+    font-family: var(--main-font);
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 1rem 2rem;
+    position: relative;
+    background-color: var(--accent-color);
+    width: 40%;
+    margin: 1rem;
+}
+
+.timeline::after {
+    left: 3em;
+}
+
+footer {
+    font-family: var var(--display-font);
+    background-color: var(--main-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}

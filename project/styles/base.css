@@ -1,0 +1,114 @@
+* {
+    text-decoration: none;
+    margin: 0;
+
+}
+
+:root {
+    --main-color: rgb(173, 21, 67);
+    --accent-color: antiquewhite;
+    --main-font: "Quicksand", sans-serif;
+    --display-font: "Noto Serif Display", serif;
+}
+
+header {
+    font-family: var(--display-font);
+    background-color: var(--main-color);
+    padding: 1rem;
+    color: var(--accent-color);
+}
+
+nav {
+    display: flex;
+    font-family: var(--main-font);
+    position: relative;
+}
+
+nav a {
+    color: var(--accent-color);
+    display: none;
+}
+
+nav a:hover {
+    color: lightpink;
+    text-decoration: dotted underline;
+}
+
+#menu {
+    display: block;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+nav.open {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
+.open a {
+    display: block;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+    /* display: flex; */
+}
+
+h2,
+h3 {
+    background-color: var(--accent-color);
+    color: var(--main-color);
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    font-family: var(--display-font);
+}
+
+div>p,
+li {
+    font-family: var(--main-font);
+    padding: 1rem;
+}
+
+#history p {
+    font-size: larger;
+}
+
+#moreinfo {
+    border: 2px dotted var(--main-color);
+    margin: 2rem;
+    padding: 1rem;
+    margin-left: 4rem;
+}
+
+a {
+    font-family: var(--main-font);
+    text-decoration: underline;
+    color: black;
+}
+
+a:hover {
+    color: var(--main-color);
+}
+
+footer {
+    font-family: var var(--display-font);
+    background-color: var(--main-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Girl History | Doll Lists</title>
+    <meta name="description" content="A webpage about American Girl dolls and their history.">
+    <meta name="author" content="Brita McNabb">
+    <script src="scripts/base.js" defer></script>
+    <script src="scripts/doll-list.js" defer></script>
+    <link rel="stylesheet" href="styles/lists.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display&family=Quicksand&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>American Girl History</h1>
+        <button id="menu" aria-label="menu"></button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="lists.html">Doll lists</a>
+            <a href="timeline.html">Timeline</a>
+            <a href="contact.html">Contact Us!</a>
+        </nav>
+    </header>
+    <main>
+        <nav class="filters">
+            <a href="#" id="home">All Dolls</a>
+            <a href="#" id="old">Before 1900</a>
+            <a href="#" id="new">After 1900</a>
+            <a href="#" id="pleasant">Pleasant Company</a>
+        </nav>
+        <h2 id="title">All Dolls</h2>
+        <div class="dollgallery">
+        </div>
+    </main>
+    <footer>
+        <p>American Girl History &copy;<span id="currentyear"></span> ★ Brita McNabb ★ Virginia</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>

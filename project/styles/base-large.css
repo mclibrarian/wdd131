@@ -1,0 +1,54 @@
+@media only screen and (min-width: 50em) {
+    .navigation {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .navigation a {
+        display: flex;
+        align-items: center;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #homepage {
+        display: flex;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .dollgallery {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 25%));
+        justify-content: center;
+    }
+
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: black;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: 2rem;
+    }
+
+    .left {
+        left: 0;
+    }
+
+    .right {
+        left: 57%;
+    }
+}

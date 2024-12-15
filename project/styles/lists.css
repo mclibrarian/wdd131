@@ -1,0 +1,125 @@
+* {
+    text-decoration: none;
+    margin: 0;
+
+}
+
+:root {
+    --main-color: rgb(173, 21, 67);
+    --accent-color: antiquewhite;
+    --main-font: "Quicksand", sans-serif;
+    --display-font: "Noto Serif Display", serif;
+}
+
+header {
+    font-family: var(--display-font);
+    background-color: var(--main-color);
+    padding: 1rem;
+    color: var(--accent-color);
+}
+
+.navigation {
+    display: flex;
+    font-family: var(--main-font);
+    position: relative;
+}
+
+.navigation a {
+    color: var(--accent-color);
+    display: none;
+}
+
+.navigation a:hover {
+    color: lightpink;
+    text-decoration: dotted underline;
+}
+
+#menu {
+    display: block;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navigation.open {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
+.open a {
+    display: block;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+}
+
+h2 {
+    background-color: var(--accent-color);
+    color: var(--main-color);
+    padding: 1rem;
+    font-size: 2rem;
+    margin: 2rem 0 1rem 0;
+    font-family: var(--display-font);
+}
+
+h3 {
+    background-color: var(--main-color);
+    color: var(--accent-color);
+    padding: 1rem;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-family: var(--display-font);
+}
+
+section {
+    border: 1px solid black;
+    padding: 2rem;
+    background-color: var(--accent-color);
+}
+
+section>p,
+li {
+    font-family: var(--main-font);
+    padding: 0.25rem;
+}
+
+.dollgallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+}
+
+.filters a {
+    color: var(--main-color);
+    font-size: larger;
+    padding: 1rem;
+}
+
+.filters a:hover {
+    color: deeppink;
+    text-decoration: double underline;
+}
+
+footer {
+    font-family: var var(--display-font);
+    background-color: var(--main-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
